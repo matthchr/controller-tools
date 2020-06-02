@@ -21,7 +21,7 @@ import (
 	. "github.com/onsi/gomega"
 	apiextlegacy "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1"
 
-	"sigs.k8s.io/controller-tools/pkg/crd"
+	"github.com/matthchr/controller-tools/pkg/crd"
 )
 
 var _ = Describe("CRD Generation", func() {

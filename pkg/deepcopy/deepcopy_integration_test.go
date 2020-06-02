@@ -25,9 +25,9 @@ import (
 	. "github.com/onsi/gomega"
 	"golang.org/x/tools/go/packages"
 
-	"sigs.k8s.io/controller-tools/pkg/deepcopy"
-	"sigs.k8s.io/controller-tools/pkg/loader"
-	"sigs.k8s.io/controller-tools/pkg/markers"
+	"github.com/matthchr/controller-tools/pkg/deepcopy"
+	"github.com/matthchr/controller-tools/pkg/loader"
+	"github.com/matthchr/controller-tools/pkg/markers"
 )
 
 func packageErrors(pkg *loader.Package, filterKinds ...packages.ErrorKind) error {

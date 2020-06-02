@@ -20,7 +20,7 @@ import (
 	"sort"
 	"strings"
 
-	"sigs.k8s.io/controller-tools/pkg/markers"
+	"github.com/matthchr/controller-tools/pkg/markers"
 )
 
 // DetailedHelp contains both a summary and further details.

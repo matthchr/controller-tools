@@ -25,7 +25,7 @@ import (
 	sc "text/scanner"
 	"unicode"
 
-	"sigs.k8s.io/controller-tools/pkg/loader"
+	"github.com/matthchr/controller-tools/pkg/loader"
 )
 
 // expect checks that the next token of the scanner is the given token, adding an error

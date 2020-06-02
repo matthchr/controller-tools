@@ -23,7 +23,7 @@ import (
 
 	apiext "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
 
-	"sigs.k8s.io/controller-tools/pkg/markers"
+	"github.com/matthchr/controller-tools/pkg/markers"
 )
 
 // ValidationMarkers lists all available markers that affect CRD schema generation,

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # This builds and runs controller-gen in a particular context
-# it's the equivalent of `go run sigs.k8s.io/controller-tools/cmd/controller-gen`
+# it's the equivalent of `go run github.com/matthchr/controller-tools/cmd/controller-gen`
 # if you could somehow do that without modifying your go.mod.
 
 current_dir=$(pwd)

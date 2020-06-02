@@ -29,11 +29,11 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	kyaml "sigs.k8s.io/yaml"
 
-	crdgen "sigs.k8s.io/controller-tools/pkg/crd"
-	crdmarkers "sigs.k8s.io/controller-tools/pkg/crd/markers"
-	"sigs.k8s.io/controller-tools/pkg/genall"
-	"sigs.k8s.io/controller-tools/pkg/markers"
-	yamlop "sigs.k8s.io/controller-tools/pkg/schemapatcher/internal/yaml"
+	crdgen "github.com/matthchr/controller-tools/pkg/crd"
+	crdmarkers "github.com/matthchr/controller-tools/pkg/crd/markers"
+	"github.com/matthchr/controller-tools/pkg/genall"
+	"github.com/matthchr/controller-tools/pkg/markers"
+	yamlop "github.com/matthchr/controller-tools/pkg/schemapatcher/internal/yaml"
 )
 
 // NB(directxman12): this code is quite fragile, but there are a sufficient

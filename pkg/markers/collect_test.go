@@ -20,7 +20,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	. "sigs.k8s.io/controller-tools/pkg/markers"
+	. "github.com/matthchr/controller-tools/pkg/markers"
 )
 
 type fieldPath struct {

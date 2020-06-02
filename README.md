@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/kubernetes-sigs/controller-tools.svg?branch=master)](https://travis-ci.org/kubernetes-sigs/controller-tools "Travis")
-[![Go Report Card](https://goreportcard.com/badge/sigs.k8s.io/controller-tools)](https://goreportcard.com/report/sigs.k8s.io/controller-tools)
+[![Go Report Card](https://goreportcard.com/badge/github.com/matthchr/controller-tools)](https://goreportcard.com/report/github.com/matthchr/controller-tools)
 
 # Kubernetes controller-tools Project
 

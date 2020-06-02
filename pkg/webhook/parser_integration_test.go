@@ -28,10 +28,10 @@ import (
 	admissionreg "k8s.io/api/admissionregistration/v1beta1"
 	"sigs.k8s.io/yaml"
 
-	"sigs.k8s.io/controller-tools/pkg/genall"
-	"sigs.k8s.io/controller-tools/pkg/loader"
-	"sigs.k8s.io/controller-tools/pkg/markers"
-	"sigs.k8s.io/controller-tools/pkg/webhook"
+	"github.com/matthchr/controller-tools/pkg/genall"
+	"github.com/matthchr/controller-tools/pkg/loader"
+	"github.com/matthchr/controller-tools/pkg/markers"
+	"github.com/matthchr/controller-tools/pkg/webhook"
 )
 
 var _ = Describe("Webhook Generation From Parsing to CustomResourceDefinition", func() {

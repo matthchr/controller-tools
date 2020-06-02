@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"testing"
 
-	"sigs.k8s.io/controller-tools/pkg/typescaffold"
+	"github.com/matthchr/controller-tools/pkg/typescaffold"
 )
 
 func TestScaffold(t *testing.T) {

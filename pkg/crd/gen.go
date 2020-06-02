@@ -24,11 +24,11 @@ import (
 	apiextlegacy "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	crdmarkers "sigs.k8s.io/controller-tools/pkg/crd/markers"
-	"sigs.k8s.io/controller-tools/pkg/genall"
-	"sigs.k8s.io/controller-tools/pkg/loader"
-	"sigs.k8s.io/controller-tools/pkg/markers"
-	"sigs.k8s.io/controller-tools/pkg/version"
+	crdmarkers "github.com/matthchr/controller-tools/pkg/crd/markers"
+	"github.com/matthchr/controller-tools/pkg/genall"
+	"github.com/matthchr/controller-tools/pkg/loader"
+	"github.com/matthchr/controller-tools/pkg/markers"
+	"github.com/matthchr/controller-tools/pkg/version"
 )
 
 // +controllertools:marker:generateHelp

@@ -73,6 +73,10 @@ type Parser struct {
 	packages map[*loader.Package]struct{}
 
 	flattener *Flattener
+
+	// AllowDangerousTypes controls the handling of non-recommended types such as float. If
+	// false (the default), these types are not supported.
+	AllowDangerousTypes bool
 }
 
 func (p *Parser) init() {
@@ -162,7 +166,7 @@ func (p *Parser) NeedSchemaFor(typ TypeIdent) {
 	// avoid tripping recursive schemata, like ManagedFields, by adding an empty WIP schema
 	p.Schemata[typ] = apiext.JSONSchemaProps{}
 
-	schemaCtx := newSchemaContext(typ.Package, p)
+	schemaCtx := newSchemaContext(typ.Package, p, p.AllowDangerousTypes)
 	ctxForInfo := schemaCtx.ForInfo(info)
 
 	pkgMarkers, err := markers.PackageMarkers(p.Collector, typ.Package)
